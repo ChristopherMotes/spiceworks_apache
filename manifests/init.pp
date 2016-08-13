@@ -9,7 +9,7 @@ class spiceworks_apache (
 
   apache::vhost { 'test.example.com':
   	port    => '80',
-	rewrites => [ { rewrite_rule => ['^test$ index.html'] } ]
+	rewrites => [ { rewrite_rule => ['^test$ index.html'] } ],
   	docroot => '/var/www/test',
   } # end apache
 
